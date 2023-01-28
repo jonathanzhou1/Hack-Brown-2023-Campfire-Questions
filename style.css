@@ -10,6 +10,7 @@ body {
     background-color: #512d08;
     text-align: center;
     overflow: hidden;
+    padding-bottom: 200px;
 }
 
 /**BACKGROUND IMAGE**/
@@ -30,6 +31,11 @@ body {
     background-repeat: no-repeat;
     background-size: 50%;
     opacity: 0.2;
+}
+
+/**CAMPFIRE**/
+#campfire {
+    padding: 5px;
 }
 
 @media (prefers-reduced-motion: no-preference)
@@ -54,22 +60,12 @@ header {
     width: 100%;
 }
 
-/**TEXT + HEADINGS**/
-h3 {
-    text-align: center;
-    font-size: 1em;
-}
-
-/**SCROLLING FOOTER**/
+/**FOOTER**/
 footer {
     height: 60px;
     width: 100%;
     padding-bottom: 5px;
     background-color: rgb(87, 46, 12);
-    background-image: none;
-    background-repeat: repeat;
-    background-attachment: scroll;
-    background-position: 0% 0%;
     position: fixed;
     bottom: 0pt;
     left: 0pt;
@@ -96,18 +92,15 @@ input[type="submit"] {
 }
 
 /**MEDIA QUERIES**/
-@media only screen and (min-width: 400px) {
-
+@media only screen and (min-width: 0px) {
     h1 {
         font-size: 40px;
         text-align: center;
         margin: auto;
     }
-
     h2 {
         font-size: 15px;
     }
-
     textarea {
         font-size: 1.2em;
         font: Verdana;
@@ -122,10 +115,13 @@ input[type="submit"] {
     label {
         font-size: 1em;
     }
+    h3 {
+        text-align: center;
+        font-size: 2vw;
+    }
 }
 
 @media only screen and (min-width: 900px) {
-
     h1 {
         font-size: 50px;
         text-align: center;
@@ -137,17 +133,14 @@ input[type="submit"] {
 }
 
 @media only screen and (min-width: 1200px) {
-
     h1 {
         font-size: 60px;
         text-align: center;
         margin: auto;
     }
-
     h2 {
         font-size: 20px;
     }
-
     textarea {
         font-size: 1.2em;
         font: Verdana;
@@ -158,5 +151,9 @@ input[type="submit"] {
         padding: 12px 15px 5px 15px;
         overflow: hidden;
         resize: none;
+    }
+    h3 {
+        text-align: center;
+        font-size: 1vw;
     }
 }
