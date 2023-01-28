@@ -9,6 +9,7 @@ html {
 body {
     background-color: #512d08;
     text-align: center;
+    overflow: hidden;
 }
 
 /**BACKGROUND IMAGE**/
@@ -27,9 +28,24 @@ body {
 
     background-image: url(moon.png);
     background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: 60%;
+    background-size: 50%;
     opacity: 0.2;
+}
+
+@media (prefers-reduced-motion: no-preference)
+{
+    #bg::before {
+        animation: Moon-spin infinite 20s linear;
+    }
+}
+
+@keyframes Moon-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /**HEADER**/
