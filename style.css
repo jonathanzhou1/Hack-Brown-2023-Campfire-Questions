@@ -91,6 +91,8 @@ input[type="submit"] {
     width: 60%;
     margin: auto;
     display: inline-block;
+    position: relative;
+    z-index: 2;
 }
 
 /**MEDIA QUERIES**/
