@@ -20,7 +20,7 @@ function doPost (e) {
     const nextRow = sheet.getLastRow() + 1
 
     const newRow = headers.map(function(header) {
-      return header === 'Date' ? new Date() : e.parameter[header]
+      return header === 'Time' ? new Date() : e.parameter[header]
     })
 
     sheet.getRange(nextRow, 1, 1, newRow.length).setValues([newRow])
