@@ -1,6 +1,6 @@
 var MAX_TOKENS = 300;
 var GENRE_COL = 3;
-var API_KEY = 'API-KEY HERE';
+var API_KEY = 'API KEY HERE';
 
 function onCall(sheet) {
   var hitBlank = false;
@@ -20,10 +20,10 @@ function onCall(sheet) {
     }
     i += 1;
   }
-  sortRange = sheet.getRange(2, GENRE_COL - 1, i, 2);
+  sortRange = sheet.getRange(2, GENRE_COL - 2, i, 3);
   sortRange.sort({column: 3, ascending: true});
 }
-
+ 
 function sortSheetsByName() {
   var aSheets = new Array();
   var ss = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Questions');
