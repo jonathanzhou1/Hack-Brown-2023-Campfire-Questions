@@ -33,11 +33,6 @@ body {
     opacity: 0.2;
 }
 
-/**CAMPFIRE**/
-#campfire {
-    padding: 5px;
-}
-
 @media (prefers-reduced-motion: no-preference)
 {
     #bg::before {
@@ -52,6 +47,11 @@ body {
     to {
         transform: rotate(360deg);
     }
+}
+
+/**CAMPFIRE**/
+#campfire {
+    padding: 5px;
 }
 
 /**HEADER**/
